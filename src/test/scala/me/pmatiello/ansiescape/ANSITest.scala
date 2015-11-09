@@ -30,4 +30,11 @@ class ANSITest extends FunSpec with Matchers {
       white("text").toString should === ("\u001B[37mtext\u001B[39m")
     }
   }
+
+  describe("Intensity") {
+    it(".bold") {
+      bold("text").toString should === ("\u001B[1mtext\u001B[22m")
+      bold(red("text")).toString should === ("\u001B[1m\u001B[31mtext\u001B[39m\u001B[22m")
+    }
+  }
 }

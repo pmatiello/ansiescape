@@ -3,6 +3,8 @@ package me.pmatiello.ansiescape
 import scala.language.implicitConversions
 
 object ANSI extends {
+  implicit def ansiString2String(ansiString: AnsiString): String = ansiString.toString
+
   def black(text: String) = AnsiString(text, "30m", "39m")
   def red(text: String) = AnsiString(text, "31m", "39m")
   def green(text: String) = AnsiString(text, "32m", "39m")
@@ -12,4 +14,5 @@ object ANSI extends {
   def cyan(text: String) = AnsiString(text, "36m", "39m")
   def white(text: String) = AnsiString(text, "37m", "39m")
 
+  def bold(text: String) = AnsiString(text, "1m", "22m")
 }
