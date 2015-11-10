@@ -15,4 +15,6 @@ object ANSI extends {
   def white(text: String) = AnsiString(text, "37m", "39m")
 
   def bold(text: String) = AnsiString(text, "1m", "22m")
+  def underline(text: String) = AnsiString(text, "4m", "24m")
+  def blink(text: String) = AnsiString(text, "5m", "25m")
 }

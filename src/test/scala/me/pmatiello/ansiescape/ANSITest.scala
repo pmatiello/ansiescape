@@ -31,10 +31,22 @@ class ANSITest extends FunSpec with Matchers {
     }
   }
 
-  describe("Intensity") {
+  describe("Modifiers") {
     it(".bold") {
       bold("text").toString should === ("\u001B[1mtext\u001B[22m")
-      bold(red("text")).toString should === ("\u001B[1m\u001B[31mtext\u001B[39m\u001B[22m")
+    }
+
+    it(".underline") {
+      underline("text").toString should === ("\u001B[4mtext\u001B[24m")
+    }
+
+    it(".blink") {
+      blink("text").toString should === ("\u001B[5mtext\u001B[25m")
+    }
+
+    it("composes modifiers") {
+      bold(underline(blink(red("text")))).toString should === (
+        "\u001B[1m\u001B[4m\u001B[5m\u001B[31mtext\u001B[39m\u001B[25m\u001B[24m\u001B[22m")
     }
   }
 }
