@@ -31,6 +31,33 @@ class ANSITest extends FunSpec with Matchers {
     }
   }
 
+  describe("Background Colors") {
+    it(".blackBackground") {
+      blackBackground("text").toString should === ("\u001B[40mtext\u001B[49m")
+    }
+    it(".redBackground") {
+      redBackground("text").toString should === ("\u001B[41mtext\u001B[49m")
+    }
+    it(".greenBackground") {
+      greenBackground("text").toString should === ("\u001B[42mtext\u001B[49m")
+    }
+    it(".yellowBackground") {
+      yellowBackground("text").toString should === ("\u001B[43mtext\u001B[49m")
+    }
+    it(".blueBackground") {
+      blueBackground("text").toString should === ("\u001B[44mtext\u001B[49m")
+    }
+    it(".purpleBackground") {
+      purpleBackground("text").toString should === ("\u001B[45mtext\u001B[49m")
+    }
+    it(".cyanBackground") {
+      cyanBackground("text").toString should === ("\u001B[46mtext\u001B[49m")
+    }
+    it(".whiteBackground") {
+      whiteBackground("text").toString should === ("\u001B[47mtext\u001B[49m")
+    }
+  }
+
   describe("Modifiers") {
     it(".bold") {
       bold("text").toString should === ("\u001B[1mtext\u001B[22m")
