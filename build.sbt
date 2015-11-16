@@ -1,12 +1,10 @@
-name := """ansiescape"""
+name := "ansiescape"
+organization := "me.pmatiello"
 
-version := "1.0"
+version := "0.1"
 
 scalaVersion := "2.11.7"
 
-// Change this to another test framework if you prefer
+licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
+
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
-
-// Uncomment to use Akka
-//libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
-
