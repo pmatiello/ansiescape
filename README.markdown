@@ -8,12 +8,14 @@ and background colors. Also, bold, underline and blink are supported as effects.
 
 ## Installing
 
-Ansiescape is available from Bintray. Add this to your project's `build.sbt` file:
+Ansiescape is available from [Bintray](https://bintray.com). Add this to your project's `build.sbt` file:
 
 ```scala
 resolvers += Resolver.bintrayRepo("pmatiello", "maven")
 libraryDependencies += "me.pmatiello" %% "ansiescape" % "0.1"
 ```
+
+The most recent release is the version 0.1 from November 24, 2015.
 
 ## Usage
 
