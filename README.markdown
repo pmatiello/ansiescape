@@ -10,16 +10,20 @@ and background colors. Also, bold, underline and blink are supported as effects.
 
 Ansiescape is available from Bintray. Add this to your project's `build.sbt` file:
 
-    resolvers += Resolver.bintrayRepo("pmatiello", "maven")
-    libraryDependencies += "me.pmatiello" %% "ansiescape" % "0.1"
+```scala
+resolvers += Resolver.bintrayRepo("pmatiello", "maven")
+libraryDependencies += "me.pmatiello" %% "ansiescape" % "0.1"
+```
 
 ## Usage
 
 All methods are exposed at the `me.pmatiello.ansiescape.ANSI` object. The simplest way to use them is by importing
 this object into the current context.
 
-    import me.pmatiello.ansiescape.ANSI._
-    println(s"${red("Hello, world")}!")
+```scala
+import me.pmatiello.ansiescape.ANSI._
+println(s"${red("Hello, world")}!")
+```
 
 ![Screenshot for the example](misc/screenshot-example.png)
 
