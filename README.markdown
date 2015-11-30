@@ -1,10 +1,10 @@
 # Ansiescape
 
-Ansiescape is a library for easy building of strings with
+Ansiescape is a Scala library for easy building of strings with
 [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code).
 
-Currently, the standard ANSI colors (black, red, green, yellow, blue, purple, cyan, white) are supported both as text
-and background colors. Also, bold, underline and blink are supported as effects.
+Currently, the standard ANSI colors (black, red, green, yellow, blue, purple, cyan, white) are supported both as
+text and background colors. Also, bold, underline and blink are supported as effects.
 
 ## Installing
 
