@@ -8,10 +8,11 @@ text and background colors. Also, bold, underline and blink are supported as eff
 
 ## Installing
 
-Ansiescape is available from [Bintray](https://bintray.com). Add this to your project's `build.sbt` file:
+Ansiescape is available from [JCenter](https://bintray.com/bintray/jcenter) repository. Add this to your project's
+`build.sbt` file:
 
 ```scala
-resolvers += Resolver.bintrayRepo("pmatiello", "maven")
+resolvers += Resolver.jcenterRepo
 libraryDependencies += "me.pmatiello" %% "ansiescape" % "0.1"
 ```
 
